@@ -1,0 +1,100 @@
+.encadre{
+    height: auto;
+    height: 250px;
+    background-color: beige;
+}
+
+.container img{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: -79px;
+    margin-left: 10px;
+}
+
+.container {
+    position: relative;
+}
+.imageSwitch {
+    height: 650px;
+    width: 493px;
+    background-color: grey;
+    margin-left: 223px;
+    margin-top: -566px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageSwitch img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    height: 133px;
+    width: auto;
+    margin-left: 52px;
+    margin-bottom: 6px;
+}
+
+.header {
+    margin-bottom: 100px;
+}
+
+
+.séparation{
+    background-color: black;
+    height: 522px;
+    width: 3px;
+    margin-left: 819px;
+    margin-top: -589px;
+}
+
+.infoprod{
+    width: 870px;
+    height: 912px;
+    background-color: white;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 923px;
+    margin-top: -582px;
+}
+
+.infoprod .buy{
+
+    height: 337px;
+    width: 784px;
+    margin-left: 41px;
+    margin-top: 442px;
+    margin-bottom: -837px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.infoprod .h1{
+    font-size: 35px;
+    margin-left: 15px;
+    color: white;
+}
+
+
+.acheter .btn{
+    height: 53px;
+    margin-top: 579px;
+    width: 780px;
+    border-radius: 30px;
+    border: 2px solid black;
+    inline-size: 375px;
+    margin-left: 39px;
+
+}
