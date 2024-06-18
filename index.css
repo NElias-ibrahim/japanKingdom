@@ -21,6 +21,10 @@ header {
     background-color: #f8f8f8;
     padding: 10px 20px;
     position: relative;
+    width: auto;
+    height: 218px;
+    margin-bottom: 124px;
+
 }
 
 .logo {
@@ -101,3 +105,4 @@ height: 100%;
 width: 100%;
 }
 >>>>>>> 1302c2db30d7b0579b7e6c97a37130d615d55cc3
+
