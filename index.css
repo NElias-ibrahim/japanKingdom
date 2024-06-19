@@ -88,6 +88,13 @@ header .logo {
     transform: translateX(-50%);
 }
 
+.Nouveautés{
+    height: 45px;
+    width: auto;
+    margin-top: -50px;
+    background-color: crimson;
+}
+
 <<<<<<< HEAD
 }
 

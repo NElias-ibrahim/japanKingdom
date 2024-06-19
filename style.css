@@ -16,11 +16,11 @@
 .container{
     position:absolute;
 }
-}
+
 .imageSwitch {
     height: 650px;
     width: 493px;
-    background-color: grey;
+    background-color: black;
     margin-left: 223px;
     margin-top: -566px;
     border-radius: 15px;
@@ -31,7 +31,10 @@
 .imageSwitch img {
     max-height: 100%;
     max-width: 100%;
+    height: 488px;
+    margin-top: -64px;
     border-radius: 15px;
+    margin-left: 1px;
 }
 
 .container button{
@@ -88,15 +91,52 @@
     color: white;
 }
 
-
-
 .acheter .btn{
+    height: 52px;
+    margin-top: 633px;
+    width: 795px;
+    border-radius: 30px;
+    border: 2px solid black;
+    inline-size: 797px;
+    margin-left: 39px;
+    background-color: crimson;
+    font-family: math;
+    FONT-SIZE: 30px;
+    color: white;
+
+}
+
+.Panier .btn{
     height: 53px;
-    margin-top: 579px;
     width: 780px;
     border-radius: 30px;
     border: 2px solid black;
-    inline-size: 375px;
+    inline-size: 797px;
     margin-left: 39px;
+    font-family: math;
+    FONT-SIZE: 30px;
+    background-color: coral;
+    color: white;
+}
 
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+button img {
+    width: 80px;
+    height: auto;
+}
+
+.infoprod .text{
+    font-size: 48px;
+    margin-left: 119px;
+}
+
+.infoprod .DESC{
+    font-size: 26px;
+    margin-left: 47px;
 }

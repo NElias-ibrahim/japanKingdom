@@ -6,30 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <style>
-        .container {
-            position: relative;
-        }
-        .imageSwitch {
-            height: 650px;
-            width: 493px;
-            background-color: grey;
-            margin-left: 223px;
-            margin-top: -566px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .imageSwitch img {
-            max-height: 100%;
-            max-width: 100%;
-            border-radius: 15px;
-        }
+
     </style>
 </head>
 <body>
-    
+
 <header style="margin-bottom: 100px;">
     <div class="encadre"></div>
     <button>menu</button>
@@ -39,16 +22,16 @@
 
 <section class="container">
     <button onclick="switchImage('img/vegetaimg1.png')">
-        <img src="img/vegetaimg1.png" alt="button" style="width: 80px;">
+        <img src="img/vegetaimg1.png">
     </button><br>
     <button onclick="switchImage('img/vegetaimg2.png')">
-        <img src="img/vegetaimg2.png" alt="button" style="width: 80px;">
+        <img src="img/vegetaimg2.png">
     </button><br>
     <button onclick="switchImage('img/vegetaimg3.png')">
-        <img src="img/vegetaimg3.png" alt="button" style="width: 80px;">
+        <img src="img/vegetaimg3.png">
     </button><br>
     <button onclick="switchImage('img/vegataimg4.png')">
-        <img src="img/vegataimg4.png" alt="button" style="width: 80px;">
+        <img src="img/vegataimg4.png">
     </button>
 
     <div class="imageSwitch" id="imageSwitch">
@@ -57,25 +40,30 @@
     <div class="séparation"></div>
 
     <div class="infoprod">
-        <h1 class="text" style="font-size: 48px; margin-left: 119px;">Vegeta Figurine</h1>
-        <p class="DESC" style="font-size: 26px; margin-left: 47px;">
+        <h1 class="text">Vegeta Figurine</h1>
+        <p class="DESC">
             Dragon Ball Z en PVC, figurine Majin Vegeta,<br>
             figurines d'action Anime, modèle de collection,
             jouets cadeaux,<br> 12,99 pouces, 33cm
         </p>
         <div class="trait"></div>
         <div class="acheter">
-            <button class="btn" style="background-color: crimson;color: white; font-size: 30px;">Acheter</button>
-            <button class="btn" style="background-color: coral; color: white;">Ajouter au Panier</button>
+            <a href="commande/acheté.html">
+            <button class="btn">Acheter</button>
+        </a>
+        </div>
+
+        <div class="Panier">
+            <a href="commande/panier.html">
+                <button class="btn">Ajouter au Panier</button>
+            </a>
+        </div>
+
         </div>
     </div>
 </section>
 
 <script>
-    function switchImage(imageSrc) {
-        const imageSwitch = document.getElementById('imageSwitch');
-        imageSwitch.innerHTML = `<img src="${imageSrc}" alt="Image">`;
-    }
 </script>
 </body>
 </html>
