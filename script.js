@@ -29,3 +29,17 @@ const changerEtatMenu = () => {
 
 const input = document.getElementById('menu-cb')
 input.addEventListener('click', changerEtatMenu)
+
+
+
+
+
+
+
+
+function searchRedirect() {
+  var searchTerm = document.getElementById("site-search").value;
+  if (searchTerm === "vegeta") {
+      window.location.href = "Test.html";
+  }
+}

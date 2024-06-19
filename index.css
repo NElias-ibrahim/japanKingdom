@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f8f8;
+    background-color: #dc143c;
     padding: 10px 20px;
     position: relative;
     width: auto;
@@ -107,3 +107,8 @@ height: 100%;
 width: 100%;
 }
 
+.search-bar{
+    border-radius: 30px;
+    border: 2px solid black;
+
+}
