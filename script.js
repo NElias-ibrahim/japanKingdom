@@ -43,3 +43,4 @@ function searchRedirect() {
       window.location.href = "Test.html";
   }
 }
+
