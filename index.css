@@ -27,10 +27,12 @@ header {
 
 }
 
-.logo {
-    text-align: center;
-    flex: 1;
-}
+.logo{
+    background-image: url(img/logoPC.png);
+    width: 500px;
+     height: 125px;
+    background-size: contain;
+    }
 
 .menu-icon {
     display: flex;
@@ -40,6 +42,10 @@ header {
 .menu-label,
 .menu-cb {
     appearance: none;
+    z-index: 2;
+}
+
+svg {
     height: 50px;
     width: 50px;
     z-index: 2;
@@ -88,10 +94,6 @@ header .logo {
     transform: translateX(-50%);
 }
 
-<<<<<<< HEAD
-}
-
-=======
 header .menu-icon,
 header .search-bar {
     flex: 0 0 auto;
@@ -104,5 +106,4 @@ left: 0;
 height: 100%;
 width: 100%;
 }
->>>>>>> 1302c2db30d7b0579b7e6c97a37130d615d55cc3
 
