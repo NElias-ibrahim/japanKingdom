@@ -18,18 +18,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f8f8;
+    background-color: #dc143c;
     padding: 10px 20px;
     position: relative;
     width: auto;
     height: 218px;
     margin-bottom: 124px;
-
 }
 
 .logo {
-    text-align: center;
-    flex: 1;
+    background-image: url(img/logoPC.png);
+    width: 500px;
+    height: 125px;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease; /* Ajout pour la transition */
 }
 
 .menu-icon {
@@ -40,12 +45,17 @@ header {
 .menu-label,
 .menu-cb {
     appearance: none;
+    z-index: 2;
+}
+
+svg {
     height: 50px;
     width: 50px;
     z-index: 2;
 }
 
 .menu-nav {
+    padding-top: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,14 +64,38 @@ header {
     max-width: 550px;
     text-align: left;
     padding-top: 40px;
-    background-color: rgb(175, 173, 173);
+    background-color: rgb(255, 255, 255);
     z-index: 1;
     transform: translateX(-100%);
-    transition: transform 1s ease-out;
+    transition: transform 0.5s ease-out;
+    overflow-y: auto;
 }
 
 .menu-item {
-    padding: 5em 20px;
+    padding: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 100px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 .menu-cb:checked ~ .menu-nav {
@@ -71,6 +105,8 @@ header {
 .search-bar {
     flex: 1;
     max-width: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
 }
 
 .header-line {
@@ -86,8 +122,10 @@ header .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.5s ease; /* Ajout pour la transition */
 }
 
+<<<<<<< HEAD
 .Nouveautés{
     height: 45px;
     width: auto;
@@ -99,17 +137,17 @@ header .logo {
 }
 
 =======
+=======
+>>>>>>> 9ffd6ce39114eda1e960792b3581f11e82ce0339
 header .menu-icon,
 header .search-bar {
     flex: 0 0 auto;
 }
 
-.menu-cote{
-position: fixed;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
+.menu-cote {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
->>>>>>> 1302c2db30d7b0579b7e6c97a37130d615d55cc3
-
