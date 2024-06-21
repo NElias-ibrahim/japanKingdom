@@ -118,8 +118,9 @@ header .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(241,222,144);
+    
     transition: all 0.5s ease; /* Ajout pour la transition */
+
 }
 
 
