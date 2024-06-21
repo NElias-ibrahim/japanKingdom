@@ -58,15 +58,17 @@
     margin-top: -589px;
 }
 
+
+
 .infoprod{
-    width: 870px;
-    height: 912px;
+    width: 640px;
+    height: 602px;
     background-color: white;
     border-color: black;
-    border: 2px solid black;
+    border: white;
     border-radius: 15px;
-    margin-left: 923px;
-    margin-top: -582px;
+    margin-left: 759px;
+    margin-top: -631px;
 }
 
 .infoprod .buy{
@@ -88,30 +90,45 @@
 }
 
 .acheter .btn{
-    height: 52px;
-    margin-top: 633px;
-    width: 795px;
+    height: 37px;
+    width: 745px;
     border-radius: 30px;
     border: 2px solid black;
-    inline-size: 797px;
-    margin-left: 39px;
+    inline-size: 291px;
     background-color: crimson;
     font-family: math;
-    FONT-SIZE: 30px;
+    FONT-SIZE: 20px;
+    margin-top: 517px;
     color: white;
 
 }
 
+.trait {
+    height: 495px;
+    background-color: black;
+    width: 1px;
+    margin-left: 1400px;
+    margin-top: -524px;
+}
+
+.commande{
+    border: 2px solid;
+    border-radius: 15px;
+    width: 401px;
+    margin-top: -568px;
+    margin-left: 1442px;
+    height: 616px;
+}
+
 .Panier .btn{
-    height: 53px;
-    width: 780px;
+    height: 37px;
+    width: 745px;
     border-radius: 30px;
     border: 2px solid black;
-    inline-size: 797px;
-    margin-left: 39px;
-    font-family: math;
-    FONT-SIZE: 30px;
+    inline-size: 291px;
     background-color: coral;
+    font-family: math;
+    FONT-SIZE: 20px;
     color: white;
 }
 
@@ -128,11 +145,12 @@ button img {
 }
 
 .infoprod .text{
-    font-size: 48px;
+    font-size: 37px;
     margin-left: 119px;
 }
 
 .infoprod .DESC{
     font-size: 26px;
     margin-left: 47px;
+    font-size: 20px;
 }
