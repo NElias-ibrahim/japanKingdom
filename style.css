@@ -152,11 +152,5 @@ button img {
 .infoprod .DESC{
     font-size: 26px;
     margin-left: 47px;
-    visibility: ;
     font-size: 20px;
-}
-
-@media screen (max-width: 643px){
-    .commande{
-    }
 }
