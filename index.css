@@ -51,8 +51,41 @@ header {
 
 svg {
     height: 50px;
-    width: 50px;
     z-index: 2;
+    margin-left: -156px;
+    height: 46px;
+}
+
+
+
+.panier-button {
+    display: block;
+    margin-left: 10px; /* Ajustez cette valeur pour définir la distance par rapport à la gauche */
+    padding: 0;
+}
+
+.panier-icon {
+    width: 50px;
+    height: 50px;
+    fill: #666;
+    background: none;
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+    margin-left: 295px;
+}
+
+.panier-button:hover .panier-icon {
+    transform: scale(1.1); /* Augmenter légèrement la taille */
+    fill: #ff6600; /* Changer la couleur */
+}
+
+.menu-label svg {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+    margin-left: 1px;
+}
+
+.menu-label:hover svg {
+    transform: scale(1.1); /* Augmenter légèrement la taille */
+    fill: #ff6600; /* Changer la couleur */
 }
 
 .menu-nav {
@@ -105,15 +138,9 @@ svg {
 }
 
 .search-bar {
-
-    max-width: 454px;
-    border-radius: 35px;
-    border: 2px solid black;
-    margin-top: 60px;
-    WIDTH: 30%;
-    height: 46px;
+    margin-left: 5px;
     position: absolute;
-    margin-left: -97px;
+    margin-top: 61pX;
 }
 
 header .logo {
@@ -121,7 +148,7 @@ header .logo {
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.5s ease;
-    margin-top: -50px;
+    margin-top: -42px;
 }
 
 .Nouveautés {
@@ -133,9 +160,9 @@ header .logo {
 
 header .menu-icon,
 header .search-bar {
-    margin-left: 45pc;
+    margin-left: 209px;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .menu-cote {
@@ -158,6 +185,14 @@ header .search-bar {
         background-repeat: no-repeat;
     }
 
+    header .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s ease;
+        margin-top: -13%;
+    }
+
     .search-bar {
         flex: 1;
         max-width: 454px;
@@ -173,6 +208,16 @@ header .search-bar {
 
 @media screen and (max-width: 1000px){
 
+     .panier-icon{
+            margin-left: 257px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 414px){
+
     .logo{
     background-image: url(img/logoPC.png);
     width: 500px;
@@ -180,7 +225,7 @@ header .search-bar {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    margin-top: -41px;
+    margin-top: -42px;
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -190,17 +235,26 @@ header .search-bar {
 
 }
 
-@media screen and (max-width: 643px){
+@media screen and (max-width: 974px){
+
     .logo{
-        background-image: url(img/MobileJKlogo.png);
-        margin-top: -84px;
-        margin-left: 91px;
-        display: block;
-        PADDING: 11%;
-        background-size: contain;
-        background-repeat: no-repeat;
+    background-image: url(img/logoPC.png);
+    width: 500px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -42px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
     }
-    }
+
+
+}
+
+
 
     @media screen and (max-width: 643px){
         .logo{
@@ -248,7 +302,7 @@ header .search-bar {
         border-radius: 35px;
         border: 2px solid black;
         margin-top: 60px;
-        height: 46px;
+        height: 36px;
         width: 27%;
         position: absolute;
         margin-left: -50px;
@@ -269,17 +323,18 @@ header .search-bar {
         border: 2px solid black;
     }
 
-    @media screen and (max-width: 469px){
-        .logo{
-            background-image: url(img/MobileJKlogo.png);
-            margin-top: -78px;
-            margin-left: 11%;
-            display: block;
-            PADDING: 11%;
-            background-size: contain;
-            background-repeat: no-repeat;
+    @media screen and (max-width: 469px) {
+            .logo {
+                background-image: url(img/MobileJKlogo.png);
+                margin-top: -78px;
+                margin-left: 11%;
+                display: block;
+                PADDING: 13%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
-        }
+
     
         .search-bar {
             flex: 1;
@@ -287,7 +342,7 @@ header .search-bar {
             border-radius: 35px;
             border: 2px solid black;
             margin-top: 61px;
-            height: 33px;
+            height: 29px;
             width: 27%;
             position: absolute;
             margin-left: -50px;
@@ -306,33 +361,31 @@ header .search-bar {
             margin-bottom: 124px;
             border: 2px solid black;
         }
+    
 
-.panier-button {
-    display: block;
-    margin-left: 10px; /* Ajustez cette valeur pour définir la distance par rapport à la gauche */
-    padding: 0;
+        @media screen and (max-width: 400px) {
+            .logo {
+                background-image: url(img/MobileJKlogo.png);
+                margin-top: -78px;
+                margin-left: 11%;
+                display: block;
+                PADDING: 13%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .search-bar {
+                margin-left: 167px;
+                position: absolute;
+                margin-top: 65px;
+            }
+
+            header .search-bar {
+    margin-left: 160px;
+    position: absolute;
+    margin-top: 65px;
 }
-
-.panier-icon {
-    width: 50px;
-    height: 50px;
-    fill: #666;
-    background: none;
-    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
-    margin-left: 1000px;
-}
-
-.panier-button:hover .panier-icon {
-    transform: scale(1.1); /* Augmenter légèrement la taille */
-    fill: #ff6600; /* Changer la couleur */
-}
-
-.menu-label svg {
-    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
-}
-
-.menu-label:hover svg {
-    transform: scale(1.1); /* Augmenter légèrement la taille */
-    fill: #ff6600; /* Changer la couleur */
-}
-
+            .panier-icon {
+                margin-left: 206px;
+            }
+        }
