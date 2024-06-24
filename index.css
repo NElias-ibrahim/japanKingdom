@@ -212,9 +212,28 @@ header .search-bar {
             margin-left: 257px;
     }
 
+    header .menu-icon, header .search-bar {
+        margin-left: 209px;
+        position: absolute;
+        margin-top: 65px;
+    }
+
 
 }
 
+@media screen and (max-width: 1920px){
+
+    .panier-icon{
+           margin-left: 257px;
+   }
+
+   header .search-bar {
+    position: absolute;
+    margin-top: 65px;
+    RIGHT: 93px;
+}
+
+}
 
 @media screen and (max-width: 414px){
 
