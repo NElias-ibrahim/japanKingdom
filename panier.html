@@ -3,38 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Panier</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="panier.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <header>
-<<<<<<< HEAD
-        
-            <label for="menu-cb" class="menu-label">
-                <svg viewBox="0 0 32 32" fill="#666">
-                    <rect x="0" y="4" rx="3" ry="3" width="32" height="3"/>
-                    <rect x="0" y="14" rx="3" ry="3" width="32" height="3"/>
-                    <rect x="0" y="24" rx="3" ry="3" width="32" height="3"/>
-                </svg>
-            </label>
-            <input id="menu-cb" type="checkbox" class="menu-cb">
-            <nav class="menu-nav">
-                <ul>
-                    <li class="menu-item"><a href="index.html" class="menu-lien">Accueil</a></li>
-                    <li class="menu-item"><a href="index.html" class="menu-lien">Accueil</a></li>
-                    <li class="menu-item"><a href="index.html" class="menu-lien">Accueil</a></li>
-                    <li class="menu-item"><a href="Paramètres.html" class="menu-lien">Paramètres</a></li>
-                </ul>
-            </nav>
-        
-            <a href="index.html">
-                <div class="logo">
-                </div>
-            </a>
-        </button>
-
-=======
         <label for="menu-cb" class="menu-label">
             <svg viewBox="0 0 32 32" fill="#666">
                 <rect x="0" y="4" rx="3" ry="3" width="32" height="3"/>
@@ -54,7 +28,6 @@
         <a href="index.html">
             <div class="logo"></div>
         </a>
->>>>>>> 33e7a2910102de571ddc957034ea722b6925d96f
         <form onsubmit="searchRedirect(); return false;">
             <input type="search" id="site-search" name="q" class="search-bar"/>
         </form>
@@ -68,11 +41,15 @@
     </header>
    
     <section class="container">
-        <button class="Vegeta">
-            <a href="Test.html">
-                <img src="img/vegataimg4.png" alt="Vegetaaaa">
-            </a>
-        </button>        
+        <h1>Mon Panier</h1>
+        <div id="cart-items"></div>
+        <div class="total">
+            <strong>Total:</strong> <span id="cart-total">0</span> €
+        </div>
+        <button class="btn" onclick="checkout()">Passer à la caisse</button>
     </section>
+
+    <script src="script.js"></script>
+   
 </body>
 </html>

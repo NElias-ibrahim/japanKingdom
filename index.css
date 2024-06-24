@@ -18,9 +18,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(241,222,144);
+    background-color: rgb(241, 222, 144);
     padding: 10px 20px;
-    width: auto;
     height: 218px;
     margin-bottom: 124px;
     border: 2px solid black;
@@ -36,7 +35,7 @@ header {
     margin-top: -53px;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s ease; /* Ajout pour la transition */
+    transition: all 0.5s ease;
 }
 
 .menu-icon {
@@ -121,12 +120,11 @@ header .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(241,222,144);
-    transition: all 0.5s ease; /* Ajout pour la transition */
+    transition: all 0.5s ease;
+    margin-top: -50px;
 }
 
-
-.Nouveautés{
+.Nouveautés {
     height: 45px;
     width: auto;
     margin-top: -50px;
@@ -135,7 +133,9 @@ header .logo {
 
 header .menu-icon,
 header .search-bar {
-    flex: 0 0 auto;
+    margin-left: 45pc;
+    position: absolute;
+    margin-top: 80px;
 }
 
 .menu-cote {
@@ -145,7 +145,6 @@ header .search-bar {
     height: 100%;
     width: 100%;
 }
-
 
 @media screen and (max-width: 643px){
     .logo{
@@ -307,4 +306,33 @@ header .search-bar {
             margin-bottom: 124px;
             border: 2px solid black;
         }
+
+.panier-button {
+    display: block;
+    margin-left: 10px; /* Ajustez cette valeur pour définir la distance par rapport à la gauche */
+    padding: 0;
+}
+
+.panier-icon {
+    width: 50px;
+    height: 50px;
+    fill: #666;
+    background: none;
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+    margin-left: 1000px;
+}
+
+.panier-button:hover .panier-icon {
+    transform: scale(1.1); /* Augmenter légèrement la taille */
+    fill: #ff6600; /* Changer la couleur */
+}
+
+.menu-label svg {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.menu-label:hover svg {
+    transform: scale(1.1); /* Augmenter légèrement la taille */
+    fill: #ff6600; /* Changer la couleur */
+}
 
